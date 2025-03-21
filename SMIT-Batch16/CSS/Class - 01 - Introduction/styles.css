@@ -5,11 +5,20 @@
     property2: value;
 } */
 
+
 h1 {
     background-color: red;
     color: white;
+    /* color: aquamarine; */
 }
 
 p {
     font-size: xx-large;
+    color: aqua;
+}
+
+span {
+    background-color: black;
+    color: white;
+    font-size: 45px;
 }
