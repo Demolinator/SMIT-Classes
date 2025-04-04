@@ -1,0 +1,57 @@
+/* p {
+    background-color: aquamarine;
+} */
+
+/* h1, .diff {
+    background-color: aquamarine;
+    color: red;
+    font-size: 45px;
+    font-weight: lighter;
+
+}
+
+.diff {
+    background-color: cadetblue;
+} 
+
+#para-1 {
+    color: bisque;
+    background-color: black;
+} */
+
+/* .diff {
+    background-color: aquamarine;
+    color: brown;
+}
+
+p {
+    background-color: red !important;
+    color: blue !important;
+}
+
+.blue{
+    background-color: blue;
+} */
+
+body {
+    background-color: rgb(18, 52, 88);
+    color: lightgray;
+    padding: 0;
+}
+
+h1 {
+    background-color: rgb(18, 52, 88);
+    color: aqua;
+    width: 100%;
+    height: 50vh;
+}
+
+p {
+    font-weight: 400;
+}
+
+
+button {
+    background-color: coral;
+    color: red;
+}
