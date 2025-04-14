@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Kaushanscript';
+    src: url('./fonts/kaushan-script/KaushanScript-Regular.otf');
+}
+
+body {
+    font-family: 'Kaushanscript';
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #102E50;
+    text-shadow: 2px 2px 2px rgb(52, 141, 210);
+}
+
+/* Selector:pseudo-element {
+
+} */
+
+/* Pseudo Elements */
+
+/* p:first-letter {
+    font-size: 32px;
+    border: 1px solid black;
+    padding: 5px;
+} */
+
+
+/* 
+ p:first-line {
+    color: aquamarine;
+} */
+
+
+/* Pseudo Classes */
+
+/* selector::psudo-class {
+
+} */
+
+/* h1:hover {
+    background-color: blanchedalmond;
+    color: brown;
+} */
+
+/* a{
+    color: black;
+    text-decoration: none;
+} */
+
+/* a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+} */
+
+/* a:link {
+    color: #102E50;
+}
+
+a:visited {
+    color: white;
+} */
+
+
+/* button:active {
+    background-color: black;
+    color: white;
+} */
+
+/* a:focus {
+    color: white;
+    background-color: black;
+} */
+
+/* input:focus {
+    border: 2px solid red;
+} */
+
+/* selector[attribute-name] {
+
+} */
+
+/* Existence Selector */
+
+/* p[class] {
+    color: red;
+} */
+
+/* Equality Selector */
+
+/* p[class="para-1"] {
+    color: brown;
+} */
+
+/* Space Selector */
+
+/* p[class~='dog'] {
+    color: brown;
+} */
+
+
+/* div {
+    color: cadetblue; */
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: #102E50; */
+    /* border: 1px solid #102E50; */
+    /* width: 250px; */
+    /* height: 300px; */
+    /* padding: 5px;
+    margin: 0px auto; */
+    /* overflow-y: scroll; */
+    /* overflow: hidden;
+    text-shadow: 2px 2px 2px #52caeb; */
+    /* box-shadow: 5px 8px 8px 5px gray; */
+    /* min-height: 300px;
+} */
