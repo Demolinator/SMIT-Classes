@@ -1,0 +1,75 @@
+div {
+    border: 1px solid black;
+    border-radius: 5px;
+    /* border-width: 10px; */
+    /* border-image: url('./images/pexels-pixabay-257360.jpg') 12 12 12 12 stretch; */
+    width: 250px;
+    /* max-width: 250px; */
+    margin: 0px auto;
+} 
+
+div>h1 {
+    display: inline-block;
+    width: 50px;
+}
+
+.header {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0.5px solid black;
+    width: 100%;
+    color: brown;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.header>h1 {
+    display: inline;
+    font-size: 16px;
+}
+
+.header>ul {
+    display: inline;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    margin: 0px 8px 0px 0px;
+}
+
+img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+button{
+    visibility: hidden;
+    /* display: none; */
+    box-shadow: 1px 1px 2px gray;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    color: red;
+    margin-left: 100px;
+    width: 100px;
+    height:  40px;
+}
+
+
+button:active {
+    box-shadow: 2px 3px 3px gray;
+    color: #bb0808;
+    background-color: #d4aa6c;
+}
+
+select{
+    cursor: pointer;
+    border: none;
+    color: brown;
+    width: 60px;
+}
