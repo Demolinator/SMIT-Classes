@@ -1,0 +1,76 @@
+/* Universal Selector */
+
+* {
+    background-color: antiquewhite;
+    color:  blueviolet;
+    margin: 0;
+    /* border: 1px solid green; */
+}
+
+/* body{
+    padding: 10px;
+} */
+
+/* Type selectors */
+
+/* h1, p, .para-1 {
+    color: black;
+} */
+
+/* Class Selector */
+
+/* .para-1 {
+    color: black;
+} */
+
+/* Id selector */
+
+/* hash, Pound */
+
+/* #main-heading {
+    color: black;
+} */
+
+/* Decendant selector */
+
+/* ul li {
+    color: green;
+}
+
+ul p {
+    color: brown;
+} */
+
+/* Child Selector */
+
+/* ul>li {
+    color: black;
+} */
+
+/* Adjacent Sibling Selector */
+
+/* ul+p+p {
+    color: black;
+} */
+
+/* General Sibling selector */
+
+/* ul~p {
+    color: black;
+} */
+
+/* inherit is used. It uses the concept of inheritence. Page 240 from book */
+
+/* h1 {
+    border: 5px solid black;
+    color: black;
+    height: 150px;
+    width: 50%;
+    padding: inherit;
+}
+
+.para-h{
+    border: 1px solid black;
+    padding: inherit;
+} */
+

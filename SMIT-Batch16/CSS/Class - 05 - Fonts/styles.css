@@ -1,0 +1,53 @@
+/* @ rule jo css changes lekar ate hain document ke andar */
+
+@font-face {
+    font-family: 'Alex-brush';
+    src: url('./fonts/alex-brush/AlexBrush-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('./fonts/quicksand/Quicksand-Bold.otf');
+}
+
+body {
+    font-family: 'Alex-brush' , sans-serif;
+}
+
+p {
+    /* font-family: 'quicksand'; */
+    font-weight: 900;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+    word-spacing: 0.25em;
+    /* text-align: justify; */
+}
+
+h1 {
+    text-transform: lowercase;
+    /* text-indent: -250px; */
+    /* border: 1px solid black; */
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+div {
+    color: brown;
+    background-color: antiquewhite;
+    border: 1px solid darkgray;
+    width: 230px;
+    padding: 10px;
+    margin: 0px auto;
+    text-shadow: 1px 1px 1px gray;
+    /* text-indent: 20px; */
+}
+
+button {
+    border: none;
+    background-color: darkcyan;
+    color: lightgray;
+    text-shadow: 1px 1px 2px black;
+    padding: 4px;
+}
