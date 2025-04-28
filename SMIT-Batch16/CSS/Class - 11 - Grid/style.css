@@ -1,0 +1,75 @@
+/* p {
+    border: 1px solid black;
+    background-color: red;
+}
+
+.para-1 {
+    position: relative;
+    z-index: 100;
+}
+
+.para-1:hover {
+    cursor: url('./Assets/cursor\ \(2\).png') 10 10, pointer;
+}
+
+.para-2 {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+} */
+
+/* .Container {
+    display: grid; */
+    /* grid-template-columns: 100px 100px 100px; Fractional Unit */
+    /* grid-template-rows: 1fr 1fr 2fr 1fr 1fr; */
+    /* gap: 10px; */
+    /* justify-content: center;
+    text-align: center; */
+    /* place-items: center;justify-items + align-items */
+    /* justify-items: center; */
+    /* border: 1px solid black;
+    padding: 5px;
+} */
+
+/* .items {
+    border: 1px solid black;
+} */
+
+.card {
+    /* overflow: hidden; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: end;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 500px;
+    height: 200;
+}
+
+.content {
+    width: 40%;
+    padding: 10px;
+}
+
+img {
+    border-radius: 5px 0px 0px 5px;
+    width: 40%;
+    height: 230px;
+}
+
+.btn-container {
+    width: 20%;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    padding: 8px;
+    border: 0.5px solid gray;
+    border-radius: 18px;
+}
+
+p {
+    font-size: 12px;
+}
