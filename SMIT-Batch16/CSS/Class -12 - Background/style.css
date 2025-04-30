@@ -1,0 +1,123 @@
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    /* border: 1px solid black;
+    height: 100vh;
+}
+
+.items {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.sub-container, .sub-container-2 {
+    display: flex;
+} */
+
+/* .sub-container-2 {
+    flex-direction: column-reverse;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(./Images/nature.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: fixed; */
+    background: url(./Images/nature.jpg) repeat-x center fixed;
+}
+
+.header{
+    position: sticky;
+    background-color: bisque;
+    top: 0px;
+    border-bottom: 1px solid gray;
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-li {
+    padding: 1px 8px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+/* Main Syles */
+
+.main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-right: 1px solid black;
+    width: 20%;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 15px;
+    padding: 15px;
+}
+
+.crd-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    width: 30%;
+    height: 200px;
+}
+
+.para-1 {
+    /* width: fit-content; */
+    background-color: #3D90D7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 18px;
+}
+
+.main-links {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
