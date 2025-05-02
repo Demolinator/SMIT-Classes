@@ -1,0 +1,133 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.nav {
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: end;
+align-items: center;
+border-bottom: 1px solid black;
+padding: 10px;
+gap: 20px;
+}
+.logo-1{
+    display: flex;
+    justify-content: start;
+}
+ul {
+    display: flex;
+    align-items: center;
+
+
+}
+li{
+    list-style-type: none;
+    display: flex;
+   
+}
+a{
+    text-decoration: none;
+    
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  padding: 20px 15px;
+  background-color: burlywood;
+}
+
+.header-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-li {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.header-anchor {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.header-anchor:hover {
+  color: chocolate;
+  /* background-color: brown; */
+  border-radius: 5px;
+}
+
+.mainbody {
+  width: 100%;
+  display: flex;
+  border: 3px solid black;
+}
+
+.sidebar {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    border-right: 0.5px solid black;
+    width: 20%;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+.main {
+  width: 80%;
+  /* background: linear-gradient(direction, color1, color2, color3); */
+  /* background: linear-gradient(45deg, rgb(255, 0, 0), rgb(121, 1, 1), rgb(255, 85, 85)); */
+  /* background: radial-gradient(circle, rgb(47, 0, 255), rgb(0, 229, 255), rgb(1, 108, 76)); */
+  background: linear-gradient(45deg, rgb(255, 0, 0), rgb(121, 1, 1), rgb(255, 85, 85));
+}
+
+.sidebar-nav {
+  list-style-type: none;
+}
+
+a {
+    font-size: 40px;
+}
+
+.Hero {
+    background: url(./Images/background.jpg) no-repeat scroll;
+    margin: 60px auto;
+    width: 90%;
+    height: 400px;
+    border: 1px solid blue;
+}
+
+.sub-section{
+    display: flex;
+    width: 90%;
+}
+
+.second-side {
+    width: 10%;
+    height: 400px;
+    padding: 15px;
+    border-left: 1px solid black;
+}
+
+.second-nav{ 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-type: none;
+}
+
+.paragraphs {
+    color: white;
+    font-size: 30px;
+}
