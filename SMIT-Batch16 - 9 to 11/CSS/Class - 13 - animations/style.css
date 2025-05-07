@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* .box, .box1, .box2, .box3 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: blue;
+    position: relative;
+}
+
+.box {
+    left: 130px;
+    transition: left 0.2s, transform 0.2s ease-in;
+}
+
+.box1 {
+    left: 70px;
+    transition: left 0.2s, transform 0.2s ease-in;
+}
+
+.box2 {
+    transition: left 0.2s, transform 0.2s ease-in;
+    left: 40px;
+}
+
+.box:hover, .box1:hover, .box2:hover {
+    transform: rotate(12deg);
+    left: -20px;
+
+} */
+
+/* 
+    Transition = min control
+    Animation/Keyframes = more control
+*/
+
+/* .box:hover {
+    background-color: red;
+    transform: scale(1.2);
+} */
+
+
+/* Animation */
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: blue;
+    position: relative;
+    /* animation-name: boxmove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+
+    animation: squareanimate 5s infinite;
+}
+
+/* @keyframes identifier {
+    
+} */
+
+/* @keyframes boxmove {
+    0%, 100% {left: 0px;}
+    50% {left: 50px;}
+} */
+
+@keyframes squareanimate {
+    0% {left: 0;}
+    25% {left: 250px;}
+    50% {left: 250px;}
+    75% {left: 0; top: 250px;}
+    100% {left: 0; top: 0;}
+}
