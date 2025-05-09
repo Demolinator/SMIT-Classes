@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.6px solid black;
+    flex-wrap: wrap;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .container { */
+    /* width: 50%; */
+    /* display: grid; */
+    /* grid-template-columns: 300px 400px 300px; Fractional Unit */
+    /* grid-template-rows: 100px 100px 100px;
+} */
+
+/* .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.container {
+    height: 100vh;
+    display: grid; */
+    /* justify-content: center; */
+    /* grid-template-areas: 
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+} */
+
+/* .items {
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+} */
+
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards {
+    border: 1px solid black;
+}
+
+.fourth{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+ul {
+    list-style-position: outside;
+}
