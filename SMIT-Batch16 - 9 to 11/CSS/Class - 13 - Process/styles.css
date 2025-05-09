@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('./Images/background.webp') no-repeat center fixed;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: red;
+}
+
+header {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+h1 {
+    position: relative;
+    animation-name: textmoveh1;
+    animation-duration: 4s;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    position: relative; 
+    animation-name: textmoveul;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+@keyframes textmoveh1 {
+    0% {right: 600px;}
+    100% {right: 0px;}
+}
+
+@keyframes textmoveul {
+    0% {left: 600px;}
+    100% {left: 0px;}
+}
