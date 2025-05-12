@@ -1,0 +1,42 @@
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+.header {
+    border-bottom: 1px solid black;
+    padding: 5px 20px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}
+
+h1 {
+    display: inline;
+}
+
+ul {
+    margin: 0px 0px 0px 75%;
+}
+
+ul, li {
+    display: inline;
+}
+
+li {
+    margin-right: 8px;
+}
+
+a {
+    vertical-align: super;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(5, 83, 87);
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+}
