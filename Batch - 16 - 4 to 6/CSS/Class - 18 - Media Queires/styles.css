@@ -1,0 +1,80 @@
+/* div {
+    border: 1px solid black;
+    height: 250px;
+    max-width: 300px;
+} */
+
+/* @ rules */
+
+/* @media (screen-size) { */
+    /* css rules/styles/properties */
+/* } */
+
+
+
+
+/* mobile screen */
+
+/* @media (max-width: 425px) {
+    div {
+        background-color: red;
+    }
+} */
+
+/* tablet screen */
+
+/* @media (min-width: 426px) and (max-width: 768px) {
+    div {
+        background-color: blue;
+    }
+} */
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.items {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: relative;
+    /* animation-name: boxmove;
+    animation-duration: 2s;
+    animation-timing-function: ease; */
+    /* animation: boxmove 2s ease 3;
+    animation-delay: 2s; */
+    /* transition: background-color 1s ease-in-out; */
+    /* transition-duration: 1s;
+    transition-timing-function: ease; */
+}
+
+/* @keyframes identifier {
+
+} */
+
+@keyframes boxmove {
+    0% {left: 200px;}
+    50% {left: 0px;}
+    100% {left: 200px;}
+}
+
+/* .items:hover {
+    background-color: aqua;
+} */
+
+/* @media (max-width: 425px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+} */
