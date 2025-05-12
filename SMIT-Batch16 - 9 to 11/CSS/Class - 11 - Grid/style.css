@@ -19,18 +19,18 @@
     z-index: 0;
 } */
 
-/* .Container {
-    display: grid; */
-    /* grid-template-columns: 100px 100px 100px; Fractional Unit */
-    /* grid-template-rows: 1fr 1fr 2fr 1fr 1fr; */
-    /* gap: 10px; */
-    /* justify-content: center;
-    text-align: center; */
-    /* place-items: center;justify-items + align-items */
-    /* justify-items: center; */
-    /* border: 1px solid black;
+.Container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;/* Fractional Unit */
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    gap: 10px; 
+    justify-content: center;
+    text-align: center; 
+    place-items: center; /* justify-items + align-items */
+    justify-items: center;
+    border: 1px solid black;
     padding: 5px;
-} */
+}
 
 /* .items {
     border: 1px solid black;

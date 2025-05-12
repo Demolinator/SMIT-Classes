@@ -88,8 +88,8 @@ a{
   width: 80%;
   /* background: linear-gradient(direction, color1, color2, color3); */
   /* background: linear-gradient(45deg, rgb(255, 0, 0), rgb(121, 1, 1), rgb(255, 85, 85)); */
-  /* background: radial-gradient(circle, rgb(47, 0, 255), rgb(0, 229, 255), rgb(1, 108, 76)); */
-  background: linear-gradient(45deg, rgb(255, 0, 0), rgb(121, 1, 1), rgb(255, 85, 85));
+  background: radial-gradient(circle, rgb(47, 0, 255), rgb(0, 229, 255), rgb(1, 108, 76));
+  /* background: linear-gradient(to right, rgb(255, 0, 0), rgb(121, 1, 1), rgb(255, 85, 85)); */
 }
 
 .sidebar-nav {
