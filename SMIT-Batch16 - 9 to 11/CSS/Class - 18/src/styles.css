@@ -1,0 +1,30 @@
+.container-move {
+  /* animation-name: squaremove;
+    animation-duration: 1s;
+    animation-timing-function: ease; */
+  animation: squaremove 1s ease infinite;
+  /* border-radius: 50%; */
+  /* animation-timing-function: ease;
+  transition-timing-function: ease; */
+  /* animation-iteration-count: 3; */
+}
+
+@keyframes squaremove {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+    background-color: aqua;
+  }
+  25% {
+    transform: translateX(200px) translateY(0px) scale(1.2) rotate(90deg);
+    background-color: aquamarine;
+  }
+  50% {
+    transform: translateX(200px) translateY(200px) scale(1.5) rotate(180deg);
+    background-color: blue;
+  }
+  75% {
+    transform: translateX(0px) translateY(200px) scale(1.2) rotate(360deg);
+    background-color: blueviolet;
+  }
+}
