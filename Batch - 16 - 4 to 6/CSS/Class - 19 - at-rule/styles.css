@@ -1,0 +1,59 @@
+@import url("./paracolor.css");
+
+h1 {
+  color: blue;
+  float: left;
+}
+
+p {
+  clear: right;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+div:hover {
+  animation: rotate 2s ease-in-out infinite;
+}
+
+@keyframes square {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    background-color: aqua;
+  }
+  25% {
+    transform: translateX(200px) rotate(90deg) scale(1.2);
+    background-color: aquamarine;
+  }
+  50% {
+    transform: translateY(200px) translateX(200px) rotate(180deg) scale(1.4);
+    background-color: aliceblue;
+  }
+  75% {
+    transform: translateX(0px) translateY(200px) rotate(360deg) scale(1.7);
+    background-color: blue;
+  }
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@media (max-width: 400px) {
+    div{
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 750px) {
+    div{
+        background-color: red;
+        background-image: url("./images/Shoaib.Akhtar.jpg");
+    }
+}
