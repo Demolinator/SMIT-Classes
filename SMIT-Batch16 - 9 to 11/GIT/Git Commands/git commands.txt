@@ -1,0 +1,19 @@
+-- git command to initialize a empty repository(recording/folder)
+
+git init
+
+-- git command to know the status of the file
+
+git status
+
+-- staging all the files
+
+git add .
+
+-- for a specific file
+
+git add <file-name>
+
+-- commiting files (Taking the image finally)
+
+git commit -m "first commit"
