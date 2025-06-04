@@ -1,0 +1,35 @@
+-- to set user name globally (Make sure to record your work)
+
+git config --global user.name <Your name>
+
+-- to set user email globally (Make sure to record your work)
+
+git config --global user.email <Your email>
+
+-- git command to initialize a empty repository(recording/folder)
+
+git init
+
+-- git command to know the status of the file
+
+git status
+
+-- staging all the files
+
+git add .
+
+-- for a specific file
+
+git add <file-name>
+
+-- commiting files (Taking the image finally)
+
+git commit -m "first commit"
+
+-- command to add remote/online repository
+
+git remote add origin <URL>
+
+-- to check the remote repository
+
+git remote -v
