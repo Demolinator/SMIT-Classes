@@ -22,6 +22,7 @@
 
 // Arthmatic operators
 // + - * / %
+// sum, concatination
 
 // BODMAS
 
