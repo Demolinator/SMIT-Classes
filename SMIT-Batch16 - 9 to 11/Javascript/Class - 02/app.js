@@ -85,3 +85,19 @@
 // console.log(userInput + " x " + ++firstNum + " = " + userInput * firstNum);
 // console.log(userInput + " x " + ++firstNum + " = " + userInput * firstNum);
 // console.log(userInput + " x " + ++firstNum + " = " + userInput * firstNum);
+
+
+// let num1 = 2;
+// let num2 = 5;
+
+// Hussain = 20
+// Kazim = 21
+// Huraira = 23
+// Husnain2 = 26
+
+//            2    +    4   +   4    +   3    +   5    +   4
+// console.log(num1++ + --num2 + num2++ + num1++ + num2-- + num2++);
+
+// console.log(num2);
+
+// console.log(3 + (2 * 4))
