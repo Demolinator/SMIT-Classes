@@ -89,7 +89,7 @@
 
 
 // let arr = [];
-// arr[0] = prompt("Enter a item"); 
+// arr[0] = prompt("Enter a item"); Talal
 // arr[1] = prompt("Enter a item"); 
 // arr[2] = prompt("Enter a item"); 
 // arr[3] = prompt("Enter a item"); 
@@ -97,8 +97,8 @@
 
 // let i = 5;
 
-// console.log(arr[--i]);
-// console.log(arr[--i]);
-// console.log(arr[--i]);
-// console.log(arr[--i]);
-// console.log(arr[--i]);
+// console.log(arr[--i]); 4
+// console.log(arr[--i]); 3
+// console.log(arr[--i]); 2
+// console.log(arr[--i]); 1
+// console.log(arr[--i]); 0
