@@ -64,4 +64,4 @@
 
 // let userNumber = prompt("Enter a Number");
 
-// console.log(document.write(userNumber));
+// console.log(document.write(userNumber)); x

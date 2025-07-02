@@ -31,7 +31,7 @@
 //     console.log(add);
 // }
 
-// let num1 = +prompt("Enter a number");
+// let num1 = +prompt("Enter a number"); 2
 // let num2 = +prompt("Enter a number");
 
 // sum(num1, num2);
