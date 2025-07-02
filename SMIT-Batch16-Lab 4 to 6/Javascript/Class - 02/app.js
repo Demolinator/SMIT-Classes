@@ -5,20 +5,24 @@
 // .dot notation
 // [] this notation will only look for variables declared and initialized
 
-let obj = "key 1";
+// let obj = "key 1";
 
-let human = {
-    Name:"Khizar", 
-    age:21, 
-    clothes: "kameez Shalwar", 
-    rollNo: 324244, 
-    cnic: 4220132238283,
-};
+// let human = {
+//     Name: "Khizar", 
+//     age: 21, 
+//     clothes: "kameez Shalwar", 
+//     rollNo: 324244, 
+//     cnic: 4220132238283,
+// };
+
+// console.log(human[obj] = "karachi", human.Name = "Talal", human);
 
 
-console.log(human[obj] = "karachi", human);
+// console.log(human[obj], human);
 
+// let fruits = ["Apple", "Banana"];
 
+// console.log(fruits[3]);
 
 
 // let arr = [];

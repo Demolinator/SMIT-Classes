@@ -3,7 +3,7 @@
 // [] notation
 
 
-// let initalValue = "key 3";
+// let initalValue = "key 3 skds";
 
 // let obj = {
 //     name: "Talal Ahmed",
@@ -11,7 +11,7 @@
 //     phoneNo: "02342938224",
 // }
 
-//                  Key 3    :  "Ahmed"
+// //                 Key 3    :  "Ahmed"
 // console.log(obj[initalValue] = true, obj);
 
 
