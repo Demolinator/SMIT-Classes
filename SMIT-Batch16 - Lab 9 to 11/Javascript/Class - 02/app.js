@@ -45,7 +45,7 @@
 // 3 function add, subtract, multiply
 // 4 function finalAnswer();
 // userInput 5 userInput + 7 
-// console.log();
+// console.log(); X
 // 5 + 7
 // 5 - 7
 // 5 * 7
