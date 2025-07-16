@@ -95,6 +95,10 @@
 
 // let cities = ["Karachi", "Islamabad", "Multan", "peshawar"];
 
+// console.log(cities.splice(3, 0, "Quetta", "Lahore"));
+// console.log(cities.pop());
+// console.log(cities);
+
 
 // // cities.push("Rawalpindi");
 // // cities.push("Lahore");

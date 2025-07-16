@@ -97,8 +97,6 @@
 // console.log("bring print of each page of the pdf");
 
 
-
-
 for (let i = 0; i < 5; i++) {
     console.log("Hello World", i);
 }
