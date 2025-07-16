@@ -20,8 +20,9 @@
 // console.log("bring me a print");
 // console.log("bring me a print");
 // console.log("bring me a print");
+// console.log("bring me a print");
 
-// for (let i = 0; i <= 5; i++) {
+// for (let i = 0; i <= 5000; i++) {
 //     console.log("Chae le ao!", i);
 // }
 
@@ -38,7 +39,7 @@
 // let loopStart = +prompt("Enter where to start the loop?")
 // let loopEnd = +prompt("Enter where to end the loop?")
 
-// for (let i = loopStart; i < loopEnd; i++) {
+// for (let i = loopStart; i <= loopEnd; i++) {
 //     console.log(i);
 // }
 
@@ -46,15 +47,15 @@
 // let loopEnd = +prompt("Enter where to end the loop?")
 // let skip = +prompt("how many numbers to skip?");
 
-// //            2         2  <   5        i = 2 + 2
+// //            2         2  <   5        i = 0 + 2
 // for (let i = loopStart; i <= loopEnd; i = i + skip) {
 //     console.log(i);
 // }
 
 // let fruits = ["Apple", "Banana", "Strawberry"];
 // //          0 ; 0 <= 2            ; 0 + 1
-// for (let i = 0; i <= fruits.length - 1; i++) {
-//     console.log(fruits[i]);
+// for (let j = 0; j <= fruits.length; j++) {
+//     console.log(fruits[j]);
 // }
 
 // for 1, 2, 3, 4; 10, 0;
@@ -94,20 +95,20 @@
 
 // console.log(total);
 
-let cleanCities = ["Karachi", "Lahore", "Islamabad", "Peshawar"];
-let usercity = prompt("Enter your city?");
-let isClean = false;
+// let cleanCities = ["Karachi", "Lahore", "Islamabad", "Peshawar"];
+// let usercity = prompt("Enter your city?");
+// let isClean = false;
 
-for (let i = 0; i < cleanCities.length; i++) {
-    console.log(i);
-    if (usercity === cleanCities[i]) {
-        isClean = true;
-        break;
-    }
-}
+// for (let i = 0; i < cleanCities.length; i++) {
+//     console.log(i);
+//     if (usercity === cleanCities[i]) {
+//         isClean = true;
+//         break;
+//     }
+// }
 
-if (isClean) {
-  console.log("you live in a clean city");
-} else {
-  console.log("you do not live in a clean city");
-}
+// if (isClean) {
+//   console.log("you live in a clean city");
+// } else {
+//   console.log("you do not live in a clean city");
+// }
