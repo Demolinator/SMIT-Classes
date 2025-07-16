@@ -13,7 +13,7 @@
 // let loopEnd = +prompt("where to end the loop?");
 // let ilapse = +prompt("How many numbers to skip?");
 
-// //              1        1  <= 10      1 = 3 + 2
+// //              1        1  <= 10      i = 3 + 2
 // for (let i = loopStart; i <= loopEnd; i = i + ilapse) {
 //     console.log(i);
 // }
