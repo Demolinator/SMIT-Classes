@@ -10,8 +10,7 @@
 
 // 5 rounds
 // 2 glass water
-// 10 pushups
-// 5 squats
+// 10 pushups aur 5 squats
 
 // for (let i = 1; i <= 5; i++) {
 //     console.log("you have completed " + i + " numbers of round");
@@ -37,10 +36,16 @@
 // ***
 
 
-// for (let i = 1; i <= 10; i++) {
-//     let row = "";
-//     for (let j = 1; j <= i; j++) {
-//         row = row +"* ";
-//     }
-//     console.log(row, i);
-// }
+for (let i = 1; i <= 3; i++) {
+    let row = "";
+
+    for (let j = 1; j <= 3; j++) {
+        row = row +"* ";
+    }
+
+    console.log(row, i);
+}
+
+// ***
+// ***
+// ***
