@@ -43,9 +43,11 @@
 
 // for (let i = 1; i <= 10; i++) {
 //     let row = "";
+
 //     for (let j = 1; j <= i; j++) {
 //         row = row + "* ";
 //     }
+
 //     console.log(row);
 // }
 
@@ -129,12 +131,12 @@ slice()
 
 
 
-// let firstName = prompt("enter your first name?");
+// let userCity = prompt("enter your city?");
 
 // // let upperName = firstName.toUpperCase()
 // // let upperName = firstName.toLowerCase()
-// let upperName = firstName[0].toUpperCase();
-// let lowerName = firstName.slice(1).toLowerCase();
+// let upperName = userCity[0].toUpperCase();
+// let lowerName = userCity.slice(1).toLowerCase();
 
 
 
