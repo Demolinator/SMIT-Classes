@@ -40,7 +40,7 @@
 
 
 /* 
-.length
+.length   // string
 
 push()
 pop()
@@ -49,7 +49,7 @@ unshift()
 indexOf()
 splice()
 
-slice()
+slice()   // string
 
 */
 
@@ -74,12 +74,12 @@ slice()
 */
 
 
-
 // let fullName = "Talal Ahmed";
 
-// let toLowerFullName = fullName.toUpperCase();
+// let toUpperFullName = fullName.toUpperCase();
+// let toLowerFullName = fullName.toLowerCase();
 
-// console.log(toLowerFullName);
+// console.log(toUpperFullName, toLowerFullName);
 
 
 
@@ -91,7 +91,7 @@ slice()
 
 
 
-// user prompt city print in title case KaRaCHi
+// user prompt city print in title case karachi
 
 // let userCity = prompt("Enter your city name?");
 
@@ -105,24 +105,24 @@ slice()
 
 
 
-let cleanCity = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Quetta"];
-let userCity = prompt("Enter your city?");
-let isClean = false;
+// let cleanCity = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Quetta"];
+// let userCity = prompt("Enter your city?"); // Karachi
+// let isClean = false;
 
-for (let i = 0; i < cleanCity.length; i++) {
-    if (userCity.toLowerCase() === cleanCity[i].toLowerCase()) {
-        isClean = true;
-        break;
-    }
-}
+// for (let i = 0; i < cleanCity.length; i++) {
+//     if (userCity.toLowerCase() === cleanCity[i].toLowerCase()) {
+//         isClean = true;
+//         break;
+//     }
+// }
 
 
-if (isClean) {
-    console.log("you live in a clean city");
-}
-else {
-    console.log("you do not live in a clean city");
-}
+// if (isClean) {
+//     console.log("you live in a clean city");
+// }
+// else {
+//     console.log("you do not live in a clean city");
+// }
 
 
 
