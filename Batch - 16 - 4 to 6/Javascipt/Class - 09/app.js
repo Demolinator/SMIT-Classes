@@ -6,12 +6,15 @@
 // let result = "";
 
 // for (let i = 0; i < text.length; i++) {
+//     //           "i"
 //     let char = text[i];
 //     if (makeUpper && char >= "a" && char <= "z") {
+//         //         "Lorem, "   +       "Lorem, I"
 //         result = result + char.toUpperCase();
 //         makeUpper = false;
 //     }
 //     else {
+//         //          "L" + "Lorem, "
 //         result = result + char;
 //     }
 
@@ -50,7 +53,7 @@
 // for (let i = str.length; i >= 0; i--) {
 //     str = str.slice(0, i);
 //     document.write("<h1>" + str + "</h1>");
-//     // str = str.slice(i);
+//     // str = str.slice(i, str.length - 1);
 // }
 
 
