@@ -7,11 +7,14 @@
 
 // for (let i = 0; i < text.length; i++) {
 //     let char = text[i];
+
 //     if (makeUpper && char >= "a" && char <= "z") {
+//         //          ""  +  "Lorem I"
 //         result = result + char.toUpperCase();
 //         makeUpper = false;
 //     }
 //     else {
+//         //         "L"  + "Lorem "
 //         result = result + char;
 //     }
 
@@ -42,7 +45,7 @@
 // document.write()
 
 
-// let str = "!@#$%^=";
+// let str = "*******";
 // for (let i = 0; i < 7; i++) {
 //     document.write("<h1>" + str + "</h1>");
 //     str = str.slice(0, str.length - 1);
