@@ -1,9 +1,9 @@
 // let discountedMonths = ["jan", "feb", "mar", "apr", "may"];
-// let userBirthMonth = prompt("Enter you Birth Month?");
+// let userBirthMonth = prompt("Enter you Birth Month?"); // JanuRary
 
 
-// userBirthMonth = userBirthMonth.toLowerCase();
-// userBirthMonth = userBirthMonth.slice(0, 3);
+// userBirthMonth = userBirthMonth.toLowerCase(); // janurary
+// userBirthMonth = userBirthMonth.slice(0, 3); // jan
 //                                              "jan"
 // let birthMonth = discountedMonths.indexOf(userBirthMonth);
 
@@ -83,6 +83,7 @@
 // for (let i = 0; i < dummyText.length; i++) {
 //     let char = dummyText.slice(i, i + 12);
 //     if (char === "World War II") {
+//                           "a quick "      + "The second world war"
 //         dummyText = dummyText.slice(0, i) + textToBeChanged + dummyText.slice(i + 12);
 //     }
 // }
