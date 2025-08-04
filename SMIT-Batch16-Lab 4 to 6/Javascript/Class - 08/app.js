@@ -76,23 +76,23 @@
 
 
 
-// let users = [];
+let userEmailInput = document.getElementById("email");
+let userPasswordInput = document.getElementById("password");
+let users = [];
 
-// function register() {
-//     let userEmailInput = document.getElementById("email");
-//     let userPasswordInput = document.getElementById("password");
-//     let userEmail = userEmailInput.value
-//     let userPassword = userPasswordInput.value
-//     let user = {
-//         email: userEmail,
-//         password: userPassword
-//     }
-//     users.push(user);
-// }
+function register() {
+    let userEmail = userEmailInput.value
+    let userPassword = userPasswordInput.value
+    let user = {
+        email: userEmail,
+        password: userPassword
+    }
+    users.push(user);
+}
 
-// function login () {
-//     console.log(users);
-// }
+function login () {
+    console.log(users);
+}
 
 
 // create the validation password should be greater than 6
