@@ -94,13 +94,13 @@
 
 
 // Scope
-// Hoisting
-// Temporal Dead Zone
+// Hoisting var undefined
+// Temporal Dead Zone let, const, Error
 
 // let userName = "Talal Ahmed";
 
 // function printName () {
-//     let userName = "Abrar Ahmed";
+//     var userName = "Abrar Ahmed";
 //     console.log(userName);
 // }
 
