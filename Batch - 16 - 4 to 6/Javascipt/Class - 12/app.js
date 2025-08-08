@@ -89,10 +89,10 @@
 // Hoisting
 // TDZ (Temporal Dead Zone)
 
-// let userName = "Talal";
+// let userName = "Talal"; Global
 
 // function printName () {
-//     let userName = "Abrar";
+//     let userName = "Abrar"; Block
 //     console.log(userName);
 // }
 
