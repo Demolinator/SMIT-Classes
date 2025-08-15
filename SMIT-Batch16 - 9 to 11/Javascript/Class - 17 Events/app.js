@@ -64,7 +64,7 @@ let capitalEl = document.getElementById("capital-city");
 let provinceEl = document.getElementById("province");
 
 function applied () {
-    capitalEl.style.backgroundColor = "black"
+    capitalEl.style.backgroundColor = "black" 
     capitalEl.style.color = "lightgreen"
 }
 
@@ -86,9 +86,10 @@ function reverted () {
 
 
 
-    let elementStoredValue = elementValue[0].toUpperCase(); 
+    let elementStoredValue = elementValue[0];
+    elementStoredValue =  elementStoredValue.toUpperCase();
     let elementStoredValue1 = elementValue.slice(1);
+    elementStoredValue1 = elementStoredValue1.toLowerCase();
     
     capitalEl.value = elementStoredValue + elementStoredValue1;
-
 }
