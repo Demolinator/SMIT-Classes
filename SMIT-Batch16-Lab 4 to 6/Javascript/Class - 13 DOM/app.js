@@ -12,6 +12,8 @@ let classSpecialEl = document.getElementsByClassName("special");
 let isChanged = false;
 // console.log(allPara[0].hidden = true);
 
+// !==
+
 function changeStyle() {
     if (!isChanged) {
         for (let i = 0; i < classSpecialEl.length; i++) {
@@ -26,7 +28,7 @@ function changeStyle() {
             classSpecialEl[i].style.backgroundColor = "white";
             classSpecialEl[i].style.color = "black";
             classSpecialEl[i].style.fontSize = "16px";
-            classSpecialEl[i].innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempora quisquam fuga dignissimos maxime nam explicabo, modi facilis ea voluptatibus ab ex adipisci impedit sequi incidunt consequatur facere delectus quis.";
+            classSpecialEl[i].innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempora quisquam fuga dignissimos maxime nam explicabo, modi facilis ea voluptatibus ab ex adipisci impedit sequi incidunt consequatur facere delectus quis. lorem Talal Ahmed";
             isChanged = false;
         }
     }

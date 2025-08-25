@@ -29,7 +29,7 @@
 
 
 // if (nowHours > 12) {
-//     hours.innerHTML = nowHours - 12;
+//     hours.innerHTML = nowHours - 12; 
 // }
 
 // if (hours.innerHTML < 10) {
