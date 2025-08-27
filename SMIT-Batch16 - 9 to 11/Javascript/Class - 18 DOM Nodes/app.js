@@ -1,3 +1,16 @@
+/* 
+    childNodes []
+
+    nodeType element 1
+    nodeType Text 3
+
+    nodeName <em></em> EM P
+
+    nodeValue Important
+    p This is a para
+*/
+
+
 
 // let nodeEL = document.childNodes[1].childNodes[1].childNodes[11].childNodes;
 // let pCounter = 0;
