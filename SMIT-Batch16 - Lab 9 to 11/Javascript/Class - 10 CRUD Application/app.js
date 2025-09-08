@@ -67,78 +67,78 @@ whatever is in the input add it to the ul
 
 */
 
-let input = document.getElementById("input");
-let msgEl = document.getElementById("message");
-let addBtn = document.getElementById("text-btn");
-let ul = document.childNodes[1].childNodes[2].childNodes[11];
-let editItem;
+// let input = document.getElementById("input");
+// let msgEl = document.getElementById("message");
+// let addBtn = document.getElementById("text-btn");
+// let ul = document.childNodes[1].childNodes[2].childNodes[11];
+// let editItem; // undefined
 
 
-function add(){
-    if(input.value === ""){
-        msgEl.innerHTML = "input is empty";
-        msgEl.style.color = "red";
-    }else {
-        let li = document.createElement("li");
-        let text = document.createTextNode(input.value)
+// function add(){
+//     if(input.value === ""){
+//         msgEl.innerHTML = "input is empty";
+//         msgEl.style.color = "red";
+//     }else {
+//         let li = document.createElement("li");
+//         let text = document.createTextNode(input.value)
 
-        let deleteButton = document.createElement("button")
-        let deleteButtonText = document.createTextNode("Delete");
-        deleteButton.setAttribute("onClick", "removeItem(this)");
+//         let deleteButton = document.createElement("button")
+//         let deleteButtonText = document.createTextNode("Delete");
+//         deleteButton.setAttribute("onClick", "removeItem(this)");
 
-        let EditButton = document.createElement("button")
-        let EditButtonText = document.createTextNode("Edit");
-        EditButton.setAttribute("onClick", "updateItem(this)");
+//         let EditButton = document.createElement("button")
+//         let EditButtonText = document.createTextNode("Edit");
+//         EditButton.setAttribute("onClick", "updateItem(this)");
         
-        li.style.fontSize = "24px"
-        deleteButton.style.margin = "5px 10px"
-        deleteButton.style.backgroundColor = "red"
-        deleteButton.style.color = "white"
-        deleteButton.style.border = "none"
-        deleteButton.style.borderRadius = "9999px"
+//         li.style.fontSize = "24px"
+//         deleteButton.style.margin = "5px 10px"
+//         deleteButton.style.backgroundColor = "red"
+//         deleteButton.style.color = "white"
+//         deleteButton.style.border = "none"
+//         deleteButton.style.borderRadius = "9999px"
 
-        EditButton.style.backgroundColor = "green"
-        EditButton.style.color = "white"
-        EditButton.style.border = "none"
-        EditButton.style.borderRadius = "9999px"    
+//         EditButton.style.backgroundColor = "green"
+//         EditButton.style.color = "white"
+//         EditButton.style.border = "none"
+//         EditButton.style.borderRadius = "9999px"    
 
 
-        deleteButton.appendChild(deleteButtonText);
-        EditButton.appendChild(EditButtonText);
-        li.appendChild(text);
-        li.appendChild(deleteButton);
-        li.appendChild(EditButton);
-        ul.appendChild(li);
+//         deleteButton.appendChild(deleteButtonText);
+//         EditButton.appendChild(EditButtonText);
+//         li.appendChild(text);
+//         li.appendChild(deleteButton);
+//         li.appendChild(EditButton);
+//         ul.appendChild(li);
 
-        input.value = ""
-    }
+//         input.value = ""
+//     }
 
-}
+// }
 
-let li = "this is an list element";
+// let li = "this is an list element";
 
-function removeItem (targetEl) {
-    let li = targetEl.parentNode;
-    let parentUl = targetEl.parentNode.parentNode;
-    parentUl.removeChild(li);
-}
+// function removeItem (targetEl) {
+//     let li = targetEl.parentNode;
+//     let parentUl = targetEl.parentNode.parentNode;
+//     parentUl.removeChild(li);
+// }
 
-function updateItem (targetEl) {
-    console.log(targetEl.previousSibling.previousSibling)
-    input.value = targetEl.previousSibling.previousSibling.nodeValue;
-    addBtn.innerHTML = "Save";
-    addBtn.setAttribute("onClick", "changeItem()")
-    editItem = targetEl;
-}
+// function updateItem (targetEl) {
+//     // console.log(targetEl.previousSibling.previousSibling)
+//     input.value = targetEl.previousSibling.previousSibling.nodeValue;
+//     addBtn.innerHTML = "Save";
+//     addBtn.setAttribute("onClick", "changeItem()")
+//     editItem = targetEl;
+// }
 
-function changeItem () {
-    console.log("clicked save");
-    editItem.previousSibling.previousSibling.nodeValue = input.value;
-    input.value = "";
-    addBtn.innerHTML = "Add";
-    addBtn.setAttribute("onClick", "add()");
-    editItem = undefined;
-}
+// function changeItem () {
+//     // console.log("clicked save");
+//     editItem.previousSibling.previousSibling.nodeValue = input.value;
+//     input.value = "";
+//     addBtn.innerHTML = "Add";
+//     addBtn.setAttribute("onClick", "add()");
+//     editItem = undefined;
+// }
 
 // ------------------ Task -------
 // CRUD Create, Read, Update, Delete

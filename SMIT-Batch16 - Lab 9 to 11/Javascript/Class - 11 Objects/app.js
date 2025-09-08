@@ -1,4 +1,4 @@
-// let stdArr = [];
+// let stdArr = [{}, {}];
 
 // function Students (stdName, rollNo, phone) {
 //     this.name = stdName;
@@ -75,13 +75,14 @@
 
 
 
-// function Students (stdName, rollNo, phone) {
+// function Students (stdName, rollNo, phone, attendance) {
 //     this.name = stdName;
 //     this.rollNo = rollNo;
 //     this.phone = phone;
 //     this.greetUser = function (name) {
 //         console.log("Hello " + name)
 //     }
+//     this.attendance = attendance
 // }
 
 
@@ -95,7 +96,7 @@
 
 // // let std1 = new Students(stdName.value, rolNo.value, phone.value);
 
-// console.log(std1.attendance, std2, std3);
+// console.log(std1, std2, std3);
 
 
 
