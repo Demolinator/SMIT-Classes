@@ -6,6 +6,8 @@ after that check if user has left the input empty at the time of triggering the 
 and else create a li and then show it in the ul
 */
 
+// create, read, update, delete
+
 let userInput = document.getElementById("user-input");
 let message = document.getElementById("message");
 let addButton = document.getElementById("add-button");
