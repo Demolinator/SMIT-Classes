@@ -35,6 +35,13 @@
 //    }
 // }
 
+
+// let carColor = prompt()
+// car[carColor] // undefined
+
+// static the value is constant
+// dynamic the value is either unknown or will be changed
+
 // let std1 = new Students("Hassan", "234567", "web & app");
 // let std2 = new Students("Aftab", "234567", "web & app");
 // let std3 = new Students("Ali", "234567", "web & app");
