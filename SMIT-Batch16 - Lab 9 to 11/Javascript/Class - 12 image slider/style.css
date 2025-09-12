@@ -1,0 +1,22 @@
+.slider-images {
+    position: absolute;
+    left: 15%;
+    height: 400px;
+    width: 70%;
+}
+
+.arrows {
+    width: 50px;
+    position: absolute;
+}
+
+.forward-arrow{
+    left: 85%;
+    top: 180px;
+}
+
+.back-arrow {
+    left: 10%;
+    top: 180px;
+    width: 45px;
+}
