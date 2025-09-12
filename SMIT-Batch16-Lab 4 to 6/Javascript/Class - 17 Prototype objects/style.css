@@ -1,0 +1,39 @@
+/* #first {
+    display: flex;
+    justify-content: center;
+   width: 250px;
+height: 250px;
+}
+#new{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+#first-button{
+    display: flex;
+    width: 100px;
+    height: 100px;
+} */
+
+
+.slider-images{
+    position: absolute;
+    left: 15%;
+    height: 600px;
+    width: 70%;
+}
+
+.arrows{
+    position: absolute;
+    width: 100px;
+}
+
+.forward {
+    left: 84%;
+    top: 250px;
+}
+
+.back {
+    left: 8%;
+    top: 240px;
+}
