@@ -39,7 +39,8 @@
 
 
 let silderImages = document.getElementsByClassName("slider-images");
-let topImageIndex = 0;
+let topImageIndex = 1;
+let isFirstClick = true;
 
 
 setInterval(function () {
@@ -47,13 +48,15 @@ setInterval(function () {
         silderImages[i].style.zIndex = 0;
     }
 
+    console.log(topImageIndex, silderImages[topImageIndex]);
+    
     silderImages[topImageIndex].style.zIndex = 10;
     topImageIndex++;
-
+    
     if (topImageIndex >= silderImages.length) {
         topImageIndex = 0;
     }
-
+    
 }, 3000);
 
 
@@ -61,10 +64,10 @@ function swapeRight () {
     for(let i = 0; i < silderImages.length; i++) {
         silderImages[i].style.zIndex = 0;
     }
-
+    
     silderImages[topImageIndex].style.zIndex = 10;
     topImageIndex++;
-
+    
     if (topImageIndex >= silderImages.length) {
         topImageIndex = 0;
     }
@@ -74,11 +77,16 @@ function swapeLeft () {
     for(let i = 0; i < silderImages.length; i++) {
         silderImages[i].style.zIndex = 0;
     }
-
-    silderImages[topImageIndex].style.zIndex = 10;
-    topImageIndex--;
-
-    if (topImageIndex < 0) {
-        topImageIndex = silderImages.length-1;
+    
+    topImageIndex--; // 1, 4
+    
+    if (topImageIndex <= 0 && isFirstClick) {
+        topImageIndex = silderImages.length-1; // 4
+    } else if (topImageIndex < 0) {
+        topImageIndex = silderImages.length-1; // 4
     }
+    isFirstClick = false;
+
+    silderImages[topImageIndex].style.zIndex = 10; // 3
+    console.log(topImageIndex, silderImages[topImageIndex]);
 }

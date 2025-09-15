@@ -37,3 +37,7 @@ height: 250px;
     left: 8%;
     top: 240px;
 }
+
+.first-image {
+    z-index: 5;
+}
