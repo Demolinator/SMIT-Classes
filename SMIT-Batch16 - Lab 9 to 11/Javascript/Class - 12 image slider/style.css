@@ -20,3 +20,7 @@
     top: 180px;
     width: 45px;
 }
+
+.first-image{
+    z-index: 5;
+}
