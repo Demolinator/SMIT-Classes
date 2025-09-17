@@ -1,3 +1,5 @@
+// filter list
+
 // let filterText = document.getElementById("filter-text");
 // let listing = document.getElementById("listing");
 
@@ -16,11 +18,7 @@
 //     }
 // }
 
-
-
-
-
-
+// filter div
 
 // let container = document.getElementById("container");
 // function filterSelection(Items) {
