@@ -76,12 +76,12 @@
 
 
 
-// let firstAsync = new Promise(function (resolve, reject) {
+// let firstAsync = new Promise(function (callBack, reject) {
 //     function myFunc () {
 //         let random = Math.ceil(Math.random() * 100);
 
 //         if (random % 2 === 0) {
-//             resolve(random);
+//             callBack(random);
 //         }
 //         else {
 //             reject("this is an odd number");
