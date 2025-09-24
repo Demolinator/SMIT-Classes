@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onLoad="initalLoad()">
+    <h1>Welcome to Special Todo App</h1>
+    <p>Unleash Your Productivity.</p>
+    <p id="user-nameplace"></p>
+    <button onClick="signOut()">Sign Out</button>
+    <input type="text" name="todos" id="todos">
+    <button onClick="addTodo()">Add Todo</button>
+
+
+     <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // TODO: Replace the following with your app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDLvUkNu-ydYuB2dEtDowJMRampQRsaeTw",
+            authDomain: "smit-0006.firebaseapp.com",
+            projectId: "smit-0006",
+            storageBucket: "smit-0006.firebasestorage.app",
+            messagingSenderId: "875255948712",
+            appId: "1:875255948712:web:69599c58dd9f24c577299d",
+            measurementId: "G-97KGKSVMLC"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
