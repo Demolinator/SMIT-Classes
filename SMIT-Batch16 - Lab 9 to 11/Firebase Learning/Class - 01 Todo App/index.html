@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="message"></p>
+    Email: <input type="email" name="email" id="email">
+    Password: <input type="password" name="password" id="password">
+    <button onClick="signUp()">Sign Up</button>
+    <button onClick="signIn()">Sign In</button>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // TODO: Replace the following with your app's Firebase configuration
+        const firebaseConfig = {
+            // Your Firebase Config object
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
