@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onLoad="getUserTodo()">
+    
+    <h1>Welcome to special Todo Application</h1>
+    <p>Your day, done right</p>
+    <button onClick="signOut()">Sign Out</button>
+    <p id="home-message"></p>
+    <input type="text" name="todos" id="todos">
+    <button onClick="addTask()">Add Task</button>
+
+
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js"></script>
+
+
+    <script>
+        // TODO: Replace the following with your app's Firebase configuration
+        const firebaseConfig = {
+            // your firebase object
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
