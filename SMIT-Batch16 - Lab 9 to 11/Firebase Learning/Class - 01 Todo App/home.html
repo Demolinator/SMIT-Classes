@@ -13,7 +13,8 @@
     <h2>Simplify Your Day, Conquer Your Goals</h2>
     <button onClick="signOut()">Sign Out</button><br />
     todos: <input type="text" id="todos">
-    <button onClick="addTodo()">Add Todo</button>
+    <button id="add-button" onClick="addTodo()">Add Todo</button>
+
     <div id="listing"></div>
 
 
@@ -24,7 +25,7 @@
     <script>
         // TODO: Replace the following with your app's Firebase configuration
         const firebaseConfig = {
-            // Your Firebase Config object
+            // your firebase object
         };
 
         firebase.initializeApp(firebaseConfig);
