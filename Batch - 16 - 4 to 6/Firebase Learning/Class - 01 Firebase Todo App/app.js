@@ -11,11 +11,11 @@ let emailEl = document.getElementById("email");
 let passwordEl = document.getElementById("password");
 let userNameEl = document.getElementById("user-name");
 let message = document.getElementById("message");
-let fb = firebase.auth();
+let auth = firebase.auth();
 const db = firebase.firestore();
 
 function signUp() {
-  fb.createUserWithEmailAndPassword(emailEl.value, passwordEl.value)
+  auth.createUserWithEmailAndPassword(emailEl.value, passwordEl.value)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
@@ -36,7 +36,7 @@ function signUp() {
 }
 
 function signIn() {
-  fb.signInWithEmailAndPassword(emailEl.value, passwordEl.value)
+  auth.signInWithEmailAndPassword(emailEl.value, passwordEl.value)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
@@ -57,7 +57,7 @@ function signIn() {
 
 function signOut() {
   localStorage.removeItem("displayName");
-  fb.signOut()
+  auth.signOut()
     .then(() => {
       // Sign-out successful.
       window.location.href = "./index.html";
@@ -69,7 +69,7 @@ function signOut() {
 }
 
 function redirectToTodo() {
-  localStorage.setItem("uid", JSON.stringify(fb.currentUser));
+  localStorage.setItem("uid", JSON.stringify(auth.currentUser));
   window.location.href = "./home.html";
 }
 
@@ -85,11 +85,10 @@ function addTodo() {
   db.collection("todos")
     .add({
       todo: todosEl.value,
-      uid: fb.currentUser.uid, // fb = firebase.auth().currentUser.uid
+      uid: auth.currentUser.uid, // fb = firebase.auth().currentUser.uid
     })
     .then((docRef) => {
       console.log("Document written with ID: ", docRef.id);
-      getTodos(docRef);
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
@@ -102,8 +101,8 @@ function getTodos() {
     .onSnapshot((snapshot) => {
         snapshot.docChanges().forEach((change) => {
             if (change.type === "added") {
-                console.log("Todos: ", change.doc.data());
-                TodosDataDOM(change.doc);
+                // console.log("New city: ", change.doc.data(), change.doc.id);
+                TodosDataDOM(change.doc)
             }
             // if (change.type === "modified") {
             //     console.log("Modified city: ", change.doc.data());
@@ -116,16 +115,24 @@ function getTodos() {
 }
 
 let divListing = document.getElementById("listing");
-let todoObjId;
 
 function TodosDataDOM (todoItem) {
-    // todoItem.data();
-    todoObjId = todoItem.id
+    let todoObject = todoItem.data();
+    todoObject.id = todoItem.id
     let p = document.createElement("p");
-    let pTextNode = document.createTextNode(todoItem.data().todo);
-    p.appendChild(pTextNode);
-    divListing.appendChild(p);
+    let pTextNode = document.createTextNode(todoObject.todo);
 
-    p.id = todoObjId
-   console.log(p)
+    let editButton = document.createElement("button");
+    let editButtonText = document.createTextNode("Edit");
+    editButton.appendChild(editButtonText);
+
+    let deleteButton = document.createElement("button");
+    let deleteButtonText = document.createTextNode("Delete");
+    deleteButton.appendChild(deleteButtonText);
+
+    
+    p.appendChild(pTextNode);
+    p.appendChild(editButton);
+    p.appendChild(deleteButton);
+    divListing.appendChild(p);
 }
