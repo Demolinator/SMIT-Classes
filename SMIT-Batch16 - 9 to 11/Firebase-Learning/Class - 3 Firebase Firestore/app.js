@@ -101,8 +101,10 @@ function addTask() {
 // }
 
 function getUserTodo() {
-  var docRef = db.collection("todos").doc(JSON.parse(localStorage.getItem("uid")));
-    console.log(JSON.parse(localStorage.getItem("uid")));
+  var docRef = db
+    .collection("todos")
+    .doc(JSON.parse(localStorage.getItem("uid")));
+  console.log(JSON.parse(localStorage.getItem("uid")));
   docRef
     .get()
     .then((doc) => {
