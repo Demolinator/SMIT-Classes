@@ -99,7 +99,7 @@ function getTodos() {
   let user = JSON.parse(localStorage.getItem("uid"));
   db.collection("todos").where("uid", "==", user.uid)
     .onSnapshot((snapshot) => {
-        snapshot.docChanges().forEach((change) => {
+        snapshot.docChanges().forEach((change) => { 
             if (change.type === "added") {
                 // console.log("New city: ", change.doc.data(), change.doc.id);
                 TodosDataDOM(change.doc)
