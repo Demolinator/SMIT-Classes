@@ -15,7 +15,8 @@ let auth = firebase.auth();
 const db = firebase.firestore();
 
 function signUp() {
-  auth.createUserWithEmailAndPassword(emailEl.value, passwordEl.value)
+  auth
+    .createUserWithEmailAndPassword(emailEl.value, passwordEl.value)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
@@ -36,7 +37,8 @@ function signUp() {
 }
 
 function signIn() {
-  auth.signInWithEmailAndPassword(emailEl.value, passwordEl.value)
+  auth
+    .signInWithEmailAndPassword(emailEl.value, passwordEl.value)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
@@ -57,7 +59,8 @@ function signIn() {
 
 function signOut() {
   localStorage.removeItem("displayName");
-  auth.signOut()
+  auth
+    .signOut()
     .then(() => {
       // Sign-out successful.
       window.location.href = "./index.html";
@@ -97,42 +100,101 @@ function addTodo() {
 
 function getTodos() {
   let user = JSON.parse(localStorage.getItem("uid"));
-  db.collection("todos").where("uid", "==", user.uid)
+  db.collection("todos")
+    .where("uid", "==", user.uid)
     .onSnapshot((snapshot) => {
-        snapshot.docChanges().forEach((change) => { 
-            if (change.type === "added") {
-                // console.log("New city: ", change.doc.data(), change.doc.id);
-                TodosDataDOM(change.doc)
-            }
-            // if (change.type === "modified") {
-            //     console.log("Modified city: ", change.doc.data());
-            // }
-            // if (change.type === "removed") {
-            //     console.log("Removed city: ", change.doc.data());
-            // }
-        });
+      snapshot.docChanges().forEach((change) => {
+        if (change.type === "added") {
+          // console.log("New city: ", change.doc.data(), change.doc.id);
+          TodosDataDOM(change.doc);
+        }
+        if (change.type === "modified") {
+            // console.log("Modified city: ", change.doc.data());
+            updateTodoFromDom(change.doc);
+        }
+        if (change.type === "removed") {
+          // console.log("Removed city: ", change.doc.data());
+          deleteFromDom(change.doc);
+        }
+      });
     });
 }
 
 let divListing = document.getElementById("listing");
 
-function TodosDataDOM (todoItem) {
-    let todoObject = todoItem.data();
-    todoObject.id = todoItem.id
-    let p = document.createElement("p");
-    let pTextNode = document.createTextNode(todoObject.todo);
+function TodosDataDOM(todoItem) {
+  let todoObject = todoItem.data(); //  {todo: todo, uid: uid}
+  todoObject.id = todoItem.id; //  {id: docid todo: todo, uid: uid}
+  let p = document.createElement("p");
+  let pTextNode = document.createTextNode(todoObject.todo);
+  p.setAttribute("id", todoObject.id);
 
-    let editButton = document.createElement("button");
-    let editButtonText = document.createTextNode("Edit");
-    editButton.appendChild(editButtonText);
+  let editButton = document.createElement("button");
+  let editButtonText = document.createTextNode("Edit");
+  editButton.appendChild(editButtonText);
+  editButton.setAttribute("onClick", "editTodo(this)");
 
-    let deleteButton = document.createElement("button");
-    let deleteButtonText = document.createTextNode("Delete");
-    deleteButton.appendChild(deleteButtonText);
+  let deleteButton = document.createElement("button");
+  let deleteButtonText = document.createTextNode("Delete");
+  deleteButton.appendChild(deleteButtonText);
+  deleteButton.setAttribute("onClick", "deleteTodo(this)");
 
-    
-    p.appendChild(pTextNode);
-    p.appendChild(editButton);
-    p.appendChild(deleteButton);
-    divListing.appendChild(p);
+  p.appendChild(pTextNode);
+  p.appendChild(editButton);
+  p.appendChild(deleteButton);
+  divListing.appendChild(p);
+}
+
+function deleteTodo(deleteEl) {
+  let docId = deleteEl.parentNode.id;
+  db.collection("todos")
+    .doc(docId)
+    .delete()
+    .then(() => {
+      console.log("Document successfully deleted!");
+    })
+    .catch((error) => {
+      console.error("Error removing document: ", error);
+    });
+}
+
+function deleteFromDom(deletedTodo) {
+  let toDeleteEl = document.getElementById(deletedTodo.id);
+  divListing.removeChild(toDeleteEl);
+}
+
+let addTodoButton = document.getElementById("add-todo");
+let editDocId;
+
+function editTodo(editTodoButton) {
+  // console.log(editTodoButton.parentNode);
+  editDocId = editTodoButton.parentNode.id;
+  todosEl.value = editTodoButton.parentNode.childNodes[0].nodeValue;
+  addTodoButton.innerHTML = "Save Todo";
+  addTodoButton.setAttribute("onClick", "updateTodo()");
+}
+
+function updateTodo() {
+  db.collection("todos")
+    .doc(editDocId)
+    .update({
+      todo: todosEl.value,
+    })
+    .then(() => {
+      console.log("Document successfully updated!");
+      todosEl.value = "";
+      addTodoButton.innerHTML = "Add Todo";
+      addTodoButton.setAttribute("onClick", "addTodo()");
+    })
+    .catch((error) => {
+      // The document probably doesn't exist.
+      console.error("Error updating document: ", error);
+    });
+}
+
+
+function updateTodoFromDom (updateTodoObj) { // change.doc.data()
+  console.log(updateTodoObj.id)
+  let updatedTodoEl = document.getElementById(updateTodoObj.id);
+  updatedTodoEl.childNodes[0].nodeValue = updateTodoObj.data().todo 
 }

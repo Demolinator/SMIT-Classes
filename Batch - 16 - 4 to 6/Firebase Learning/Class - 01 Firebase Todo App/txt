@@ -1,2 +1,21 @@
 // firebase firestore
-ref().where("condition 1", "==", "condition 2")
+// ref().where("condition 1", "==", "condition 2")
+// db.collection().doc().delete()
+
+
+// let createUserWithEmailAndPassword = new Promise(function (resolve, reject) {
+//     if (useremail === useremail && password === password) {
+//         resolve(user)
+//     } else {
+//         reject(error)
+//     }
+// });
+
+// createUserWithEmailAndPassword
+//     .then(function (userCredentials) {
+
+//     })
+//     .catch(function (error) {
+
+//     })
+
