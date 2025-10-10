@@ -1,3 +1,5 @@
+// console.log(true === 1); //  1 === "true"
+
 // primitive Data Types
 // stack immutable not changable
 // There are 7 primitive data types in javascript
@@ -50,3 +52,48 @@
 // heap
 // person => Ref 23x43
 // person1 => Ref 23x43
+
+
+
+
+
+// console.log(typeof NaN == typeof 2)
+
+// let a = symbol;
+// let b = symbol;
+
+// console.log();
+
+
+// let a = Symbol("id");
+// let b = Symbol("id");
+// console.log(a + b);
+
+
+// let a = 3;
+// let b = 2n;
+// console.log(a + BigInt(b));
+
+
+// let fruits = ["Apple", "banana", "strawberry"];
+// let fruits1 = [...fruits]; // deep copy
+// fruits1.push("Kiwi");
+// console.log();
+
+
+
+// let data = ["text", 23, true, undefined, null, Symbol("id"), 324n, [], {}, function greet() {}];
+
+// for (let i = 0; i < data.length; i++) {
+//     console.log(typeof data[i], data[i]);
+// }
+
+
+// let word = "system";
+// let rev = "";
+
+// for (let i = word.length - 1; i >= 0; i--) {
+//     rev += word[i];
+// }
+
+// console.log(rev);
