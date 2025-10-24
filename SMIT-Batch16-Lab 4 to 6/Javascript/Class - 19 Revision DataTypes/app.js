@@ -36,9 +36,9 @@ let userName = "bilal";
 //     console.log("you are under 20");
 // }
 
-let num1 = prompt("Enter the first number?")
-let num2 = prompt("Enter the second number?")
-let operator = prompt("Enter the operator number?")
+// let num1 = prompt("Enter the first number?")
+// let num2 = prompt("Enter the second number?")
+// let operator = prompt("Enter the operator number?")
 
 
 // console.log();
