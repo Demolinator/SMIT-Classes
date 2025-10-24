@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    
+    <h1>Expense Tracker</h1>
+    
+    <h3 id="budget-amount"></h3>
+    <h2>Budget</h2>
+    <input type="number" id="Budget" placeholder="Enter Your Budget Amount?">
+    <button onClick="setBudget()">Add Budget</button>
+
+    <hr>
+
+    <h2>Expense</h2>
+    <input type="text" id="Expense-name" placeholder="Enter the Expense name?">
+
+    <input type="number" id="Expense-amount" placeholder="Enter the Expense amount?">
+
+    <button onClick="addExpense()">Add Expense</button>
+
+    <ul id="Expense-list"></ul>
+
+    <h3 id="summary"></h3>
+    <script src="app.js"></script>
+</body>
+</html>

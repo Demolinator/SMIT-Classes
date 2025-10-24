@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Application</title>
+</head>
+<body>
+    <!-- Food ordering app -->
+    <h1>Food Ordering App</h1>
+    <select name="fast-food" id="food-list">
+        <option value="pizza">Pizza (1500rs)</option>
+        <option value="burger">Burger (1000rs)</option>
+        <option value="pasta">Pasta (800rs)</option>
+    </select>
+    <input type="number" name="qty" id="qty">
+    <button onClick="placeOrder()">Order Now</button>
+    <h3 id="bill"></h3>
+
+
+    <!-- Motivationl Quote generator -->
+     <h1>Generate your motivational quote</h1>
+     <h3 id="quote"></h3>
+     <h4 id="time"></h4>
+     <button onClick="quoteGenerate()">Click to generate</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
