@@ -8,7 +8,7 @@
 //     pEls[1].style.fontStyle = "italic";
 // }
 
-
+// console.log(document.getElementsByClassName("special"));
 
 
 // let pEls = document.getElementsByTagName('p')

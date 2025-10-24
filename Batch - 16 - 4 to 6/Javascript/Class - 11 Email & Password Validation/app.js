@@ -1,11 +1,12 @@
-// let password checker 
-// password >= 6, Uppercase, number
-// this password is strong
-// this password is weak
+// // let password checker Validation
+// // password >= 6, Uppercase, number
+// // this password is strong
+// // this password is weak
 
-// let password = "Ta123";
+// let password = "Ta@123456";
 // let UpperPass = false;
 // let number = false;
+// let special = false;
 
 // for (let i = 0; i < password.length; i++) {
 //     let char = password[i];
@@ -16,10 +17,14 @@
 //     if (char >= "0" && char <= "9") {
 //         number = true;
 //     }
+
+//     if (char === "@" || char === "*") {
+//         special = true;
+//     }
 // }
 
 // //       "Talal1234" >= 6
-// if (password.length >= 6 && UpperPass && number) {
+// if (password.length >= 6 && UpperPass && number && special) {
 //     console.log("This password is strong!");
 // }
 // else {

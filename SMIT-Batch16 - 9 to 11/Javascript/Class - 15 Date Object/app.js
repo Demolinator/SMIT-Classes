@@ -1,9 +1,9 @@
 // let rightNow = new Date();
 // let today = rightNow.getDay(); 0 - 6
+// console.log(today);
 // let days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 // let todayStr = days[today];
 // console.log(todayStr);
-
 
 
 // let rightNow = new Date();
@@ -16,9 +16,9 @@
 
 
 
-// let rightNow = new Date(); Date String
+// let rightNow = new Date(); // Date String
 
-// let todayDate = rightNow.getDate(); 8
+// let todayDate = rightNow.getDate(); // 8
 // let thisYear = rightNow.getFullYear();// 2025
 // let todayHours = rightNow.getHours();
 // let todayMins = rightNow.getMinutes();
@@ -33,8 +33,11 @@
 
 
 
-// let rightNow = new Date();
+let rightNow = new Date();
+let mubeenBirthDay = new Date("24 august 2026");
 
-// let timeNow = rightNow.getTime();
+let birthdayTime = mubeenBirthDay.getTime();
 
-// console.log(timeNow);
+let timeNow = rightNow.getTime();
+
+console.log((birthdayTime - timeNow) / 1000 / 60 / 60 / 24);

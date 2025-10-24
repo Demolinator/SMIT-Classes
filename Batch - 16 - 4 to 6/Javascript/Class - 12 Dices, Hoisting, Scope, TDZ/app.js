@@ -86,13 +86,13 @@
 // var userName;
 
 // scope
-// Hoisting
+// Hoisting function and variable declarations are hoisted at the top of the page.
 // TDZ (Temporal Dead Zone)
 
-// let userName = "Talal"; Global
+// let userName = "Talal"; Global Scoped, Global Variable.
 
 // function printName () {
-//     let userName = "Abrar"; Block
+//     let userName = "Abrar"; Block Scoped, Block Variable
 //     console.log(userName);
 // }
 

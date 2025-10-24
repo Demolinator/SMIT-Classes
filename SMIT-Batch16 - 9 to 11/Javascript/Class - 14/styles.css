@@ -10,15 +10,15 @@
     padding: 5px;
     background-color: red;
     border-radius: 5px;
-} */
+}
 
-/* .container div {
+.container div {
     width: 27.2%;
-    height: 9px; */
-    /* border: 1px solid black; */
-/* } */
+    height: 9px;
+    border: 1px solid black;
+}
 
-/* .special {
+.special {
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;

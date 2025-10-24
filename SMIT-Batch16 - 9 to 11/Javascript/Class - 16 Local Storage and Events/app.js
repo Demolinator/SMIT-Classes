@@ -23,5 +23,6 @@ function submit () {
 
     allStudents.push(student);
     localStorage.setItem("studentInfo", JSON.stringify(allStudents))
-    console.log(storedObj);
+    
+    console.log(JSON.parse(storedObj));
 }

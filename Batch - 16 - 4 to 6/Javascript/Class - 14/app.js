@@ -1,22 +1,23 @@
 // let h1El = document.childNodes[1].childNodes[2].childNodes[1].childNodes[0];
-// console.log(h1El.nodeName); <em></em> = EM
+// console.log(h1El.nodeName);// <em></em> = EM
 // console.log(h1El.nodeType);// 1 aur 3
-// console.log(h1El.nodeValue = "."); "This is a para".innerHTML X
+// console.log(h1El.nodeValue = "Talal Ahmed");// "This is a para".innerHTML X
 
 
-// let h1El = document.childNodes[1].childNodes[2].childNodes[3].childNodes;[text, p, text, p]
+// let h1El = document.childNodes[1].childNodes[2].childNodes[3].childNodes;// [text, p, text, p]
 // let pCounter = 0;
-
+ 
+// console.log(h1El);
 // for (let i = 0; i < h1El.length; i++) {
 //     if (h1El[i].nodeType === 1) {
 //         pCounter++
 //     }
-//     if (pCounter === 2) {
+//     if (pCounter === 1) {
 //         h1El[i].innerHTML = "This is a para from js" + i;
 //     }
 // }
 
-// console.log(h1El);
+// // console.log(h1El);
 
 
 

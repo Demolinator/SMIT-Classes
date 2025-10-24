@@ -30,6 +30,7 @@
 //         }
 //         else if (userInputMail !== userObj.email || userInputPass !== userObj.password) {
 //             message = "user does not exist.";
+//             break;
 //         }
 //     }
 //     messageEl.innerHTML = message;
@@ -82,6 +83,8 @@
 //       resultDiceEl.innerHTML = dice5;
 //     } else if (diceRoll === 6) {
 //       resultDiceEl.innerHTML = dice6;
+//     } else {
+//         resultDiceEl.innerHTML = "Internal Server Error!";
 //     }
 // }
 
@@ -119,10 +122,20 @@
 
 // var a = "a";
 // var a = "b";
+// var a = "b";
+// var a = "b";
+// var a = "c";
 
 // let a = "a";
-// a = "b";
+// let b = a;
 
 // const a = "a";
 
-// console.log(a);
+// let obj = {
+//     firstName: "Mubeen",
+//     lastName: "ul islam"
+// }
+
+// let obj1 = obj;
+// obj1.age = 18
+// console.log(obj);
