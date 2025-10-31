@@ -22,31 +22,23 @@
 
 // filter div
 
-// let container = document.getElementById("container")
+let container = document.getElementById("container");
 
-// function filterSelection(category){
+function filterSelection(category) {
+  let divs = container.childNodes;
 
-//     let divs = container.childNodes
+//   console.log(category);
+//   console.log(container.childNodes);
 
-//     console.log(category)
-//     console.log(container.childNodes)
+  for (let i = 0; i < divs.length; i++) {
+    if (divs[i].nodeType === 1) {
+      // console.log(divs[i].className.indexOf(category))
 
-//     for(let i = 0; i < divs.length; i++){
-
-//         if(divs[i].nodeType === 1){
-
-//             // console.log(divs[i].className.indexOf(category))
-
-//             if(divs[i].className.indexOf(category) !== -1){
-
-//                 divs[i].style.display = ""
-//             }
-//             else{
-//                 divs[i].style.display = "none"
-//             }
-
-//         }
-
-//     }
-
-// }
+      if (divs[i].className.indexOf(category) !== -1) {
+        divs[i].style.display = "";
+      } else {
+        divs[i].style.display = "none";
+      }
+    }
+  }
+}

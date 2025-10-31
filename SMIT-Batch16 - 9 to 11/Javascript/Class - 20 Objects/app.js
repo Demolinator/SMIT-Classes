@@ -24,6 +24,7 @@
 // apple["is fresh"] = true
 // apple[checkIsFresh]
 // apple[checkIsFresh] = changeFreshStatus
+// console.log(apple)
 // apple
 
 
