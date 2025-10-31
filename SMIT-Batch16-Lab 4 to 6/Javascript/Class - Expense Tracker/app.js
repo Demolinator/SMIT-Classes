@@ -1,4 +1,5 @@
-let budget = parseFloat(localStorage.getItem("budget")) || 0;
+let budget = parseFloat(localStorage.getItem("budget")) 
+|| 0;
 let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 
 displayBudget();
@@ -20,7 +21,7 @@ function setBudget () {
 
 function displayBudget () {
     let budgetEl = document.getElementById("budget-amount");
-    budgetEl.innerHTML = budget;
+    budgetEl.innerHTML = "Your Budget: " + budget;
 }
 
 function setExpense () {
@@ -53,5 +54,10 @@ function displayExpense () {
         totalSpent += parseFloat(expenses[i].expenseAmount);
     }
     let remaining = budget - totalSpent;
-    
+    console.log(remaining);
+
+    let summary=document.getElementById("summary")
+    summary.innerHTML=`Total Budget= ${budget}
+    Remaining budget ${remaining}
+    Total Expense ${totalSpent}`
 }
