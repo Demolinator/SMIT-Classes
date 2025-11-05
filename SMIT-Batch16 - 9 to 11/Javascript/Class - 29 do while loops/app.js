@@ -14,8 +14,15 @@
 //         alert("you were off");
 //     }
 // }
-// while (userGuess === 5);
+// while (userGuess !== guess);
 // console.log("you pressed Exit! thank you for visiting.");
+
+
+// let password;
+// while(response !== "{}") {
+//     password = prompt("enter your password");
+// }
+// console.log("Access Granted!");
 
 
 // let num = 4;
@@ -27,14 +34,23 @@
 
 
 
-class Student {
-    constructor (firstName, rollNo) {
-        this.name = firstName;
-        this.rollNo = rollNo;
-    }
-}
 
-let student1 = new Student("Talal", "213456");
-let student2 = new Student("Farhan", "213456");
+// Class and constructor
+// class Student {
+//     constructor (firstName, rollNo) {
+//         this.name = firstName;
+//         this.rollNo = rollNo;
+//     }
+//     attendance = false;
 
-console.log(student1, student2);
+//     canAdd (a, b) {
+//         return a + b;
+//     }
+// }
+
+// let student1 = new Student("Talal", "213456");
+// let student2 = new Student("Farhan", "213456");
+
+// // student1.canAdd(5, 5)
+
+// console.log(student1, student2, student1.canAdd(5, 5));
