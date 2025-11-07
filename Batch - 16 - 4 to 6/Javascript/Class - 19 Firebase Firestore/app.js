@@ -76,6 +76,9 @@ function redirectToSignUp() {
   window.location.href = "./index.html";
 }
 
+
+
+
 // Firbase Firestore
 let todosEl = document.getElementById("todos");
 let userNamePlaceEl = document.getElementById("user-nameplace");

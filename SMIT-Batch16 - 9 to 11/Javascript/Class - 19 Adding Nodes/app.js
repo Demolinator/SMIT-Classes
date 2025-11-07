@@ -1,15 +1,16 @@
 
 
-// let h1 = document.createElement("h1");
+// let h1 = document.createElement("h1");// <h1></h1>
 
-// let para = document.createTextNode("This is a paragraph");
+// let para = document.createTextNode("This is a Heading");// "This is a paragraph" #text
 
-// h1.appendChild(para);
+// h1.appendChild(para);//<h1>"This is a paragraph"</h1>
 
 
-// let bodyEl = document.childNodes[1].childNodes[2];
+// let bodyEl = document.childNodes[1].childNodes[2];// <body></body>
 
-// bodyEl.appendChild(h1);
+
+// bodyEl.appendChild(h1);// <body><h1></h1></body>
 
 
 
@@ -32,11 +33,11 @@
 
 // let em = document.createElement("em");
 // let middleText = document.createTextNode("Important");
-// em.appendChild(middleText);
+// em.appendChild(middleText);// 
 
-// p.appendChild(firstText)
-// p.appendChild(em)
-// p.appendChild(lastText)
+// p.appendChild(firstText)// <p>This is </p>
+// p.appendChild(em)// <p>This is <em>Important</em></p>
+// p.appendChild(lastText)// <p>This is <em>Important</em> !</p>
 
 // bodyEl.appendChild(p);
 

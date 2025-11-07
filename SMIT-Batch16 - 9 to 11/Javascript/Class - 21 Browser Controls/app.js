@@ -1,4 +1,5 @@
-//  var whereWeAt = window.location.href;
+//  var whereWeAt = location.href;
+//  console.log(whereWeAt)
 
 // history.forward()
 // history.back()

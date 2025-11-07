@@ -1,7 +1,7 @@
 // filter list
 
 // let filterText = document.getElementById("filter-text");
-// let listing = document.getElementById("listing");
+// let listing = document.getElementById("listing"); // ul
 
 // function filterList () {
 //     let listingText = listing.childNodes; // [li, #text]
@@ -20,18 +20,18 @@
 
 // filter div
 
-// let container = document.getElementById("container");
-// function filterSelection(Items) {
-//   let containerJun = container.childNodes;
-//   for (let i = 0; i < containerJun.length; i++) {
-//     if (containerJun[i].nodeType === 1) {
-//     //   console.log(containerJun[i].className.indexOf(Items));
-//       if (containerJun[i].className.indexOf(Items) !== -1) {
-//         containerJun[i].style.display = "block";
-//       } else {
-//         containerJun[i].style.display = "none";
-//       }
-//       // (containerJun[i].className)
-//     }
-//   }
-// }
+let container = document.getElementById("container");
+function filterSelection(Items) {
+  let containerJun = container.childNodes;// [div #text div]
+  for (let i = 0; i < containerJun.length; i++) {
+    if (containerJun[i].nodeType === 1) {// [div div]
+    //   console.log(containerJun[i].className.indexOf(Items));
+      if (containerJun[i].className.indexOf(Items) !== -1) {
+        containerJun[i].style.display = "block";
+      } else {
+        containerJun[i].style.display = "none";
+      }
+      // (containerJun[i].className)
+    }
+  }
+}
