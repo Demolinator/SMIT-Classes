@@ -20,8 +20,9 @@
 // console.log("connected!", connected, network);
 
 
-// Destructuring
 
+
+// Destructuring
 
 
 // let arr = ["Apple", "Banana", "Kiwi"];
@@ -75,7 +76,11 @@
 
 
 
-// let arr = "Apple";
+// let arr = ["Apple", "Banana", "Kiwi"];
+
+// for (let fruits in arr) {
+//     console.log(arr[fruits]);
+// }
 
 // for (let fruits of arr) {
 //     console.log(fruits);
@@ -89,6 +94,9 @@
 
 
 
-import { add, subtract } from "./myLibrary/myFunctions.js"
+// import { add, subtract } from "./myLibrary/mathFunction.js"
+// import { date } from "./myLibrary/dateFunctions.js"
 
-console.log(add(2, 5), subtract(2, 5));
+// console.log(add(2, 5), subtract(2, 5));
+
+// console.log(date("jan 25 2025"));
