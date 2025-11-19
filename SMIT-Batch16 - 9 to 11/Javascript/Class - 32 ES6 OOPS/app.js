@@ -5,6 +5,7 @@
 //         this.rollNo = rollNo;
 //     }
 
+
 //     attendance = false;
 
 //     isBrightStudent() {
@@ -82,26 +83,57 @@
 
 // Encapsulation
 
-class User {
-    constructor (userName, email) {
-        this.userName = userName;
-        this.email = email;
-    }
+// class User {
+//     constructor (userName, email) {
+//         this.userName = userName;
+//         this.email = email;
+//     }
     
-    #password = 1234
-    setPassword (password) {
-        this.#password = password;
-        console.log(`this is your password: ${this.#password}`)
-    }
+//     #password = 1234
+//     setPassword (password) {
+//         this.#password = password;
+//         console.log(`this is your password: ${this.#password}`)
+//     }
 
-    getPassword () {
-        console.log("you cannot get the password...")
-    }
+//     getPassword () {
+//         console.log("you cannot get the password...")
+//     }
+// }
+
+
+// let mubeen = new User("Mubeen", "mubeen@gmail.com");
+
+// mubeen.setPassword("123456")
+
+// console.log(mubeen.getPassword());
+
+
+
+
+// Abstraction
+
+// class Car {
+//     start () {
+//         this.#engineStart();
+//     }
+
+//     #engineStart () {
+//         console.log("Engine Started...")
+//     }
+// }
+
+
+// let car1 = new Car();
+// car1.start()
+// console.log()
+
+
+
+// Call Stack & Execution Context
+
+function foo () {
+    foo();
+    console.log("Hello world!")
 }
 
-
-let mubeen = new User("Mubeen", "mubeen@gmail.com");
-
-mubeen.setPassword("123456")
-
-console.log(mubeen.getPassword());
+foo()
