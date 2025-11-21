@@ -38,13 +38,15 @@
 // phase 1 => Memory Creation
 // Phase 2 => Execution
 
-function f1() {
-    console.log('Hi by f1!');
-}
+// function f1() {
+//     console.log('Hi by f1!');
+//     f2();
+// }
 
-function f2() {
-    f1();
-    console.log('Hi by f2!');
-}
+// function f2() {
+//     f1();
+//     console.log('Hi by f2!');
+// }
 
-f2();
+// f2();
+
