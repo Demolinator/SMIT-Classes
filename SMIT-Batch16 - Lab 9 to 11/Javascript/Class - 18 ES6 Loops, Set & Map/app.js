@@ -122,6 +122,10 @@
 
 // let arr = new Set(["Apples", "Bananas", "Kiwis", "Apples"]);
 
+// let realArr = [...arr];
+// realArr.push("Apples")
+// console.log(realArr);
+
 // console.log(arr.has("Bananas"));
 // console.log(arr.add("Strawberry"));
 // console.log(arr.delete("Strawberry"));
@@ -135,5 +139,7 @@ let human = new Map([
     ["rollNo", 123456],
     ["isDisabled", false]
 ]);
-
-console.log(human);
+// human.clear()
+// human.has()
+// human.delete("fullName")
+console.log(human.keys());

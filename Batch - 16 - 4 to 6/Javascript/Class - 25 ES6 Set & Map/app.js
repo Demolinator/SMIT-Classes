@@ -34,4 +34,8 @@ let obj = new Map([
     ["isDisabled", true]
 ])
 
-console.log(typeof obj);
+// console.log(obj.has("rollNo"));
+// obj.clear()
+// obj.delete("fullName")
+// console.log(obj.size);
+console.log(obj.keys());
