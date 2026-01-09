@@ -1,9 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Users = () => {
   let [users, setUsers] = useState([]);
   let [loading, setLoading] = useState(true);
   let [error, setError] = useState("");
+
+  let count = useRef(0);
+  console.log(count.current++);
+
+
+  
+
+
+
 
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/users")
