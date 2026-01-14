@@ -18,7 +18,7 @@ const Home = () => {
       console.log(err)
     }
   }
-
+  
   useEffect(() => {
     fetchProducts()
   }, [])

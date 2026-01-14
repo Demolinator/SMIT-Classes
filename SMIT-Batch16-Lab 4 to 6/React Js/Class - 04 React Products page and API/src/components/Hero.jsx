@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Hero = () => {
   return (
    <section className="flex bg-black flex-col items-center text-white text-sm pb-20 px-4 font-poppins">
