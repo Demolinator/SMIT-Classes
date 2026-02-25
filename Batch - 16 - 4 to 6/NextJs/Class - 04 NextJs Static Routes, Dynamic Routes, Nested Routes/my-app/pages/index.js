@@ -28,7 +28,7 @@ export async function getStaticProps() {
         greet: "Hello",
         todos: data
       },
-      revalidate: 10
+      revalidate: 100
     }
   )
 }
