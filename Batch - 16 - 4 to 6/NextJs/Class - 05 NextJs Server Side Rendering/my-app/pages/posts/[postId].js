@@ -1,6 +1,16 @@
+import Head from "next/head";
+
 export default function post({ post }) {
   return (
     <div>
+      <Head>
+        <title>Single Post Page</title>
+        <meta name="description" content="This is a dummy post"/>
+      </Head>
+      <Head>
+        <title>Single Post Page</title>
+        <meta name="author" content="Talal Ahmed"/>
+      </Head>
       <h1>
         Hello Page
       </h1>
