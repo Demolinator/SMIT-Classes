@@ -1,0 +1,14 @@
+[
+  {
+    "title": "wwIII",
+    "body": "This is a dummy world war III Post.",
+    "comments": ["Iran vs Israel", "Pakistan vs Afghanistan"],
+    "id": 1
+  },
+  {
+    "title": "I am Also AI",
+    "body": "This posts tell about how you can't trust everything.",
+    "comments": ["Iran vs Israel", "Pakistan vs Afghanistan"],
+    "id": 2
+  }
+]
