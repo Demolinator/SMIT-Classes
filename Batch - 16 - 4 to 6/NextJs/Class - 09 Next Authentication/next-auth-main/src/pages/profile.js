@@ -1,3 +1,6 @@
+import { getSession } from "next-auth/react"
+import { redirect } from "next/dist/server/api-utils";
+
 export default function SignUp () {
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -9,3 +12,22 @@ export default function SignUp () {
         </div>
     )
 };
+
+
+export async function getServerSideProps ({req}) {
+    const session = await getSession({req});
+    if(!session) {
+      return {
+        redirect: {
+          destination: "/auth/login",
+          permenant: false
+        }
+      }
+    }
+
+    return {
+      props: {
+        session
+      }
+    }
+}
