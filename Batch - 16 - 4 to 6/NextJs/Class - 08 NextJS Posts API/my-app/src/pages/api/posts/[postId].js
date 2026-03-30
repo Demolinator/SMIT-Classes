@@ -1,4 +1,4 @@
-import { getPostById } from "@/services/postsServices";
+import { getPostById, updatePostById } from "@/services/postsServices";
 
 export default function handler(req, res) {
   if(req.method === "GET") {
