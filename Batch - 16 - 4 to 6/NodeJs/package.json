@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-crud",
+  "version": "1.0.0",
+  "description": "this is a template for nodejs-crud-app",
+  "license": "ISC",
+  "author": "Talal Ahmed",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
