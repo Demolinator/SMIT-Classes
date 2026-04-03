@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^5.2.1",
+    "joi": "^18.1.2",
     "nodemon": "^3.1.14"
   }
 }

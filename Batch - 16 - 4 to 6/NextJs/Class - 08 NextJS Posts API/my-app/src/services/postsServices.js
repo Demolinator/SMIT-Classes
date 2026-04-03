@@ -9,7 +9,12 @@ export function getAllPosts() {
 }
 
 export function getPostById(id) {
-  const data = getAllPosts()
-  const post = data.find(p => p.id === Number(id))
+  const data = getAllPosts() // [{}]
+  const post = data.find(p => p.id === Number(id)) // for unique values {}
   return post 
+}
+
+export function updatePostById(id, obj) {
+  const data = getPostById(id);
+
 }
